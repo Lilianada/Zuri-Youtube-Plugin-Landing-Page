@@ -497,7 +497,8 @@ i{
     color: var(--white-color);
     border: solid var(--green-color);
     background: var(--green-color);
-    padding: var(--mb-10);
+    padding: 0 var(--mb-10);
+    border-radius: 3px;
 }
 
 [data-tab-content]{
@@ -745,7 +746,7 @@ i{
     margin-bottom: var(--mb-32)
 }
 
-@media screen and (min-width:320px) and (max-width:425px) {
+@media screen and (min-width:320px) and (max-width:400px) {
     .main__wrapper{
         display: flex;
         flex-direction: column;
@@ -761,12 +762,12 @@ i{
     }
 
     .display, .faq__bx{
-        width: 16rem;
+        width: 17rem;
 
     }
 
     .display__txt{
-        width: 13rem;
+        width: auto;
     }
 
     .img__display {
@@ -828,7 +829,7 @@ i{
 }
 
 
-@media screen and (min-width:425px) and (max-width:900px) {
+@media screen and (min-width:401px) and (max-width:900px) {
 
     .tabs{
         width: 70vw;
