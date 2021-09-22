@@ -494,7 +494,7 @@ i{
 }
 
 .tab.active{
-    color: var(--text-primary-color);
+    color: var(--white-color);
     border: solid var(--green-color);
     background: var(--green-color);
     padding: var(--mb-10);
