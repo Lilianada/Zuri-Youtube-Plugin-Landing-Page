@@ -470,7 +470,7 @@ i{
 /*--------------- [_TAB ITEMS] -------------*/
 /*========================================*/
 .tabs{
-    width: 50vw;
+    width: 63vw;
 }
 
 .tab-header{
@@ -479,11 +479,11 @@ i{
     justify-content: space-evenly;
     align-items: center;
     padding: 0;
-    margin-top: var(--mb-32);
+    margin-top: var(--mb-16);
 }
 
 .tab{
-    width:  auto;
+    width: auto;
     font-size: var(--font-size-midi);
     font-weight: var(--font-bold);
     color: var(--text-secondary-color);
@@ -524,7 +524,7 @@ i{
     width:calc(100% / 3);
     height:2px;
     background:var(--green-color);
-    left:0px;
+    left:1px;
     border-radius:5px;
     transition:all 500ms ease-in-out;
     z-index: 2;
@@ -532,12 +532,12 @@ i{
 
 
 @media screen and (min-width:320px) and (max-width:900px) {
-    .tab-header{
-        justify-content: space-between;
+    .tab{
+        font-size: var(--mfont-size-reg);
     }
 
     .tab__items li{
-        font-size: var(--mfont-size-midi);
+        font-size: var(--mfont-size-mini);
         font-weight: var(--font-bold);
     }
 
@@ -558,13 +558,12 @@ i{
 }
 
 .display{
-    width: 48.875rem;
+    width: 70vw;
     height: 30rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: var(--mb-32);
 }
 
 .bx1{
@@ -671,6 +670,7 @@ i{
 
 
 /*--------------- [_GRID TWO__Review Box] -------------*/
+
 .review__bx{
     width: 50vw;
     height: 9.625rem;
@@ -720,7 +720,7 @@ i{
     font-size: var(--font-size-mini);
 }
 
-.large{
+.large p{
     font-size: var(--font-size-reg);
 }
 
@@ -738,6 +738,7 @@ i{
 }
 
 .faq__bx p{
+    width: auto;
     margin-bottom: var(--mb-32)
 }
 
@@ -756,12 +757,18 @@ i{
         display: none;
     }
 
-    .display, .review__bx, .faq__bx{
-        width: 17.875rem;
+    .display, .faq__bx{
+        width: 16rem;
+
     }
 
-    .img__display{
-        width: 12rem;
+    .display__txt{
+        width: 13rem;
+    }
+
+    .img__display {
+        width: 10rem;
+        margin: 0 auto;
     }
 
     .display{
@@ -771,8 +778,9 @@ i{
 
     .display h1{
         display: block;
-        width: 12rem;
+        width: 10rem;
         font-size: var(--mfont-size-midi);
+        margin: 0 auto;
     }
 
     .display__list li{
@@ -784,11 +792,35 @@ i{
     }
 
     .review__bx{
-        height: 13rem;
+        width: 13rem;
+        height: 20rem;
+        text-align: justify;
+    }
+
+    .faq__bx{
+        width: 13rem;
+        padding: 1.5rem;
     }
 
     .review__dets{
-        margin-bottom: var(--mb-16);
+        margin-bottom: 0;
+    }
+
+    .prev, .next {
+        padding: 5px;
+    }
+
+    .profile__img{
+        margin: 0;
+    }
+
+    .user__profile{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .star__ratings, .user__name {
+        padding: .5rem 0;
     }
 }
 
@@ -911,7 +943,7 @@ i{
 
 @media screen and (min-width: 425px) and (max-width:900px) {
     .drop__down{
-        margin: 0 auto;
+        margin: 0 auto 2em;
     }
 
     button.accordion {
